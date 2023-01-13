@@ -39,6 +39,13 @@ public class HomeController {
     public String hello(){
         return "Welcome in service now";
     }
+    
+    
+    @GetMapping("/testMessage")
+    public String testMessage(){
+    
+        return "This is just a test message.!!!!!!!!!!!";
+    }
 
     @PostMapping("/data")
     public String getString(@RequestBody String name){
